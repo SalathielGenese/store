@@ -3,10 +3,7 @@ package name.genese.salathiel.store;
 import name.genese.salathiel.store.controller.CategoryController;
 import name.genese.salathiel.store.model.Category;
 import name.genese.salathiel.store.repository.CategoryRepository;
-import name.genese.salathiel.store.view.category.CategoriesSearchView;
-import name.genese.salathiel.store.view.category.CategoryCreationView;
-import name.genese.salathiel.store.view.category.CategoryDeletionView;
-import name.genese.salathiel.store.view.category.CategorySearchView;
+import name.genese.salathiel.store.view.category.*;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -62,7 +59,7 @@ public class Router {
                 final Optional<Category> optionalCategory = categoryController.update(new Category(
                         Integer.parseInt(request.get("id")),
                         request.get("name")));
-                new CategoryCreationView().render(optionalCategory);
+                new CategoryUpdateView().render(optionalCategory);
                 break;
             case CATEGORIES_DELETE:
                 final boolean deleted = categoryController.delete(Integer.parseInt(request.get("id")));
