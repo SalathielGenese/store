@@ -1,7 +1,7 @@
 package name.genese.salathiel.store.model;
 
 /**
- * category
+ * Category
  *
  * @author Salathiel @t salathiel@genese.name
  * @since Mar 04, 2022 @t 06:29:03
