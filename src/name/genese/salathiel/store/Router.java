@@ -72,6 +72,7 @@ public class Router {
                 throw new UnsupportedOperationException(String.format("PATH '%s'", path));
         }
 
+        System.out.println(); // NOTE: add empty line for a more readable output
         return true;
     }
 }
