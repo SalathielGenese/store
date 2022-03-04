@@ -30,7 +30,7 @@ public class CategoryController {
     }
 
     public List<Category> search(final String terms) throws SQLException {
-        return categoryRepository.search(terms);
+        return categoryRepository.search(null == terms ? "" : terms);
     }
 
     public List<Category> search(final Category category) throws SQLException {
