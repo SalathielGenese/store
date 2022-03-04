@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Main {
 
+    // DROP TABLE IF EXISTS;
+    // CREATE TABLE category(id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) UNIQUE);
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
         final Router router = new Router();
